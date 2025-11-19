@@ -195,7 +195,7 @@ export default function Projects() {
           
           <motion.div variants={itemVariants} className="mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              {t({ en: 'Selected Work', fr: 'Travaux Sélectionnés' })}
+              {t({ en: 'Latest Work', fr: 'Derniers Projets' })}
             </span>
             <h2 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight">
               {t({ en: 'Building digital', fr: 'Créer des solutions' })}{' '}

@@ -138,7 +138,7 @@ export default function Contact() {
             ))}
           </div>
 
-          {/* CTA Section */}
+         
           <motion.div
             variants={itemVariants}
             className="relative overflow-hidden rounded-3xl border-2 border-primary/20 bg-gradient-to-br from-purple-500/10 via-background to-blue-500/10 p-8 md:p-12 text-center"
@@ -157,7 +157,7 @@ export default function Contact() {
                 })}
               </p>
               <Button size="lg" asChild className="group">
-                <a href={`mailto:${personal.email}`}>
+                <a href={`mailto:${personal.email}`} className='flex items-center'>
                   {t({ en: 'Send me an email', fr: 'Envoyez-moi un email' })}
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -169,7 +169,7 @@ export default function Contact() {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl -z-0"></div>
           </motion.div>
 
-          {/* Social Links */}
+          
           {socialLinks.length > 0 && (
             <motion.div variants={itemVariants} className="mt-12 text-center">
               <p className="text-sm text-muted-foreground mb-4">

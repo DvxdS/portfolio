@@ -29,7 +29,7 @@ export interface PortfolioData {
       en: string;
       fr: string;
     };
-    experience: Array<{
+    experiences: Array<{
       company: string;
       position: {
         en: string;
@@ -109,7 +109,7 @@ export interface PortfolioData {
 },
 
   
-    experience: [
+    experiences: [
       {
         company: "NIMBAA",
         position: {
@@ -221,7 +221,7 @@ export interface PortfolioData {
             en: "Backend Development",
             fr: "Développement Backend"
           },
-          skills: ["Django", "Node.js", "Python", "PostgreSQL", "REST API", "GraphQL"]
+          skills: ["Django", "Node.js", "Python", "PostgreSQL", "REST API", "NestJS"]
         },
         {
           name: {

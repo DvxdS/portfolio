@@ -6,7 +6,7 @@ import { Briefcase, Calendar } from 'lucide-react';
 
 export default function Experience() {
   const { t } = useLanguage();
-  const { experience } = portfolioData;
+  const { experiences } = portfolioData;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -48,21 +48,21 @@ export default function Experience() {
               {t({ en: 'Career Journey', fr: 'Parcours Professionnel' })}
             </span>
             <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-              {t({ en: 'Work', fr: 'Expérience' })}{' '}
+              {t({ en: 'Work', fr: 'Expériences' })}{' '}
               <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                {t({ en: 'Experience', fr: 'Professionnelle' })}
+                {t({ en: 'Experiences', fr: 'Professionnelle' })}
               </span>
             </h2>
           </motion.div>
 
-          {/* Timeline */}
+          
           <div className="relative">
-            {/* Vertical line */}
+            
             <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-purple-500 via-blue-500 to-transparent"></div>
 
-            {/* Experience items */}
+            
             <div className="space-y-12">
-              {experience.map((exp, index) => (
+              {experiences.map((exp, index) => (
                 <motion.div
                   key={index}
                   variants={itemVariants}

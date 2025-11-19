@@ -42,14 +42,22 @@ export default function Navbar() {
   }, []);
 
   const scrollToSection = (id: string) => {
+  
+  setIsOpen(false);
+  
+  
+  setTimeout(() => {
     const element = document.getElementById(id);
     if (element) {
       const offset = 80;
-      const elementPosition = element.offsetTop - offset;
-      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
-      setIsOpen(false);
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ 
+        top: elementPosition, 
+        behavior: 'smooth' 
+      });
     }
-  };
+  }, 100);
+};
 
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'fr' : 'en');
