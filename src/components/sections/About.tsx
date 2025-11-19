@@ -5,7 +5,7 @@ import { Code, Sparkles, Rocket, Users } from 'lucide-react';
 
 export default function About() {
   const { t } = useLanguage();
-  const { about, personal } = portfolioData;
+  const { about,  } = portfolioData;
 
   const stats = [
     {

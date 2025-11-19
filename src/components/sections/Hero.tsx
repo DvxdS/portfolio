@@ -44,20 +44,6 @@ export default function Hero() {
     }
   };
 
-  // --- NEW: Waving hand animation variants ---
-  const waveVariant = {
-    initial: { rotate: 0 },
-    wave: {
-      rotate: [0, 14, -8, 14, -4, 10, 0],
-      transition: {
-        duration: 2.5,
-        repeat: Infinity,
-        repeatDelay: 10, // Wait 10 seconds before waving again
-        ease: "easeInOut",
-      },
-    },
-  };
-  // ---------------------------------------------
 
   return (
     <section
