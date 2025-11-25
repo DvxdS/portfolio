@@ -203,6 +203,19 @@ export interface PortfolioData {
         featured: true,
         image: "/nimbaa.png"
       },
+
+      {
+        name: "Fluiq",
+        description: {
+          en: "Fluiq is a tool designed for West African creators, helping them organize their online presence, manage opportunities, and turn their influence into real income through a simple, fast, fully serverless interface.",
+          fr: "Site web d'Fluiq est un outil pensé pour les créateurs d’Afrique de l’Ouest, permettant de structurer leur présence en ligne, gérer leurs opportunités et transformer leur influence en revenus grâce à une interface simple, rapide et 100% serverless.Fluiq est un outil pensé pour les créateurs d’Afrique de l’Ouest, permettant de structurer leur présence en ligne, gérer leurs opportunités et transformer leur influence en revenus grâce à une interface simple, rapide et 100% serverless."
+        },
+        technologies: ["Reactjs", "TypeScript", "TailWindCSS", "Vitejs"],
+        link: "https://fluiq-verk.vercel.app/", 
+        featured: true,
+        image: "/fluiq.png",
+        github: "https://github.com/DvxdS/fluiq"
+      },
      
       
     ],
